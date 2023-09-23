@@ -7,10 +7,12 @@
 ![image](https://github.com/Rishika0702/SE20UARI170_REAL-WORLDSCHEDULING/assets/73593792/11c522d5-6762-4379-958f-b9e03f86db9c)
 
 ### SHORTEST JOB FIRST SCHEDULING
-![image](https://github.com/Rishika0702/SE20UARI170_REAL-WORLDSCHEDULING/assets/73593792/6ecc281e-b7bd-483d-86f9-83d05ca26f98)
+![image](https://github.com/Rishika0702/SE20UARI170_REAL-WORLDSCHEDULING/assets/73593792/f755e1ba-bd84-45fb-aa3b-2bc0685f66b3)
+
 
 ### PRIORITY SCHEDULING
-![image](https://github.com/Rishika0702/SE20UARI170_REAL-WORLDSCHEDULING/assets/73593792/c0530fce-926e-401c-822c-d669bbff254b)
+![image](https://github.com/Rishika0702/SE20UARI170_REAL-WORLDSCHEDULING/assets/73593792/a7a414d3-c98e-43e5-8098-f5207bb6501f)
+
 
 
 #### Efficiency and Fairness Discussion
