@@ -10,7 +10,7 @@ class Process:
         self.completion_time = 0
         self.turnaround_time = 0
         self.waiting_time = 0
-
+        self.response_time = 0
 
     def convert_burst_time(self):
         parts = self.burst_time_str.split()
@@ -24,7 +24,7 @@ def main():
         ("A", "00:00", "30 minutes", 3),
         ("B", "00:10", "20 minutes", 5),
         ("C", "00:15", "40 minutes", 2),
-        ("D", "00:20", "15 mins", 4)
+        ("D", "00:20", "15 minutes", 4)
     ]
 
     processes = []
@@ -85,10 +85,21 @@ def main():
 
     avg_turnaround_time = total_turnaround_time / len(processes)
     avg_waiting_time = total_waiting_time / len(processes)
-   
+    avg_response_time = total_response_time / len(processes)
+    cpu_utilization = ((current_time - total_idle_time) / current_time) * 100
+    throughput = len(processes) / (max_completion_time - min_arrival_time)
+
+    print("\nP\tAT\tBT\t\tPRI\tST\tCT\tTAT\tWT\tRT\n")
+
+    for process in processes:
+        print(f"{process.pid}\t{process.arrival_time_str}\t{process.burst_time_str}\t{process.priority}\t{process.start_time}\t{process.completion_time}\t{process.turnaround_time}\t{process.waiting_time}\t{process.response_time}\n")
+
     print(f"Average Turnaround Time = {avg_turnaround_time:.2f}")
     print(f"Average Waiting Time = {avg_waiting_time:.2f}")
- 
+    print(f"Average Response Time = {avg_response_time:.2f}")
+    print(f"CPU Utilization = {cpu_utilization:.2f}%")
+    print(f"Throughput = {throughput:.2f} process/unit time")
+
 def time_to_minutes(time_str):
     time_obj = datetime.strptime(time_str, "%H:%M")
     return time_obj.hour * 60 + time_obj.minute
