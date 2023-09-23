@@ -21,3 +21,5 @@ Efficiency: The Shortest Job First (SJF) algorithm often minimizes the average w
 
 Fairness: Priority Scheduling (PS) based on urgency level can be regarded as fair because it treats patients in accordance with their level of urgency, giving more urgent situations higher priority.
 
+In Real World Scenario Round Robin is not preferable as it is premptive.
+
